@@ -1,0 +1,37 @@
+title       = About r3
+subtitle    = A quick explanation of what r3 is, and why it is useful.
+timestamp   = 1221330775
+
+related[]   = /about/usingr3
+
+
+blog_index  = false
+
+more_links[] = {
+    url   = http://sourceforge.net/projects/r3/
+    text  = r3 project on sourceforge
+    extra = where to download r3 and find some documentation
+}
+more_links[] = {
+    url   = http://sourceforge.net/projects/stickleback/
+    text  = stickleback project on sourceforge
+    extra = where to download stickleback, the plugin engine
+}
+more_links[] = {
+    url   = http://developer.yahoo.com/r3/
+    text  = r3 on Yahoo! Developer Network
+    extra = the source for official Yahoo! documentation
+}
+more_links[] = {
+    url   = http://www.openr3.com/
+    text  = open r3
+    extra = the r3 developer's blog
+}
+more_links[] = {
+    url   = http://www.getinstance.com/
+    text  = getInstance(*)
+    extra = (
+        the personal blog of Matt Zandstra, one of r3’s developers,
+        often contains posts about r3 and stickleback
+    )
+}

@@ -1,0 +1,103 @@
+        Modern programming languages have a curious property known as
+        <inheritance>. Any language with <object-oriented> features allow you
+        to create a generic class of code that later can be re-used in other
+        code without having to type it out again.
+        
+        On top of this comes a second feature known as <polymorphism>. This
+        means that the code can respond as if it were more than one type, by
+        having inherited code.
+        
+        
+    An example of inheritance in web pages
+        
+    |   <div class='image small'><a
+    |   href='http://flickr.com/photos/semaphoria/2553816174/'><img
+    |   src='http://farm3.static.flickr.com/2193/2553816174_b918e2fe01_m.jpg'
+    |   ><span><q>sitemaps at sunset</q> 
+    |   uploaded by <cite>semaphoria</cite></span></a></div>
+
+        Take a look at the <apple.com site map>.
+        
+        When you consider the sitemap of a website, you start with the
+        homepage. From here, it will branch off into the main areas of the
+        site. From these areas spring more pages, related to only that area.
+        
+        Eventually, mapping every page on the site, you would end up with a
+        tree-like diagram, with pages springing forth from other pages.
+        Examples of such diagrams can be found on <flickr>.
+        
+        Start at <the homepage>. The main header across the page containing
+        the logo will not change across the site. Likewise, the main
+        navigation will also stay much the same across the site, only changing
+        which area is highlighted to give you a sense of location. Other
+        common elements would include the copyright statement and policy links
+        in the footer. All pages of the site can therefore be said to inherit
+        these features from the homepage.
+        
+        
+    An example of polymorphism in web pages
+        
+        Compare the pages of the different types of Mac---including the
+        <Macbook Air>, the <iMac>, and the <Mac Pro>---and you will
+        notice that whilst the pages are visually different in terms of
+        colours, imagery and content, the basic layout is much the same. Each
+        has the name of the Mac and links to further pages about that
+        computer, a large splash image and some sales copy, small in-depth
+        features, and lastly across the bottom a stripe to link to the Apple
+        Store to buy the computer.
+        
+        Having features that are in their core the same, but with differing
+        content, images, behaviours or subtle changes to the basic layout can
+        be said to be polymorphic, responding differently depending upon their
+        context in the overall site.
+        
+        
+    r3's role in creating inheritance and polymorphism
+        
+        The r3 tool brings both of these features to files that, unlike
+        programming languages, have no way to support this. Files are
+        registered within r3 and then generated from multiple source
+        fragments. Any fragment can be replaced with an alternative, based
+        upon various criteria.
+        
+        Originally created to manage the HTML templates used in Yahoo!
+        websites, early versions of r3 allowed areas of a page to vary based
+        upon a mixture of ''«intl»'' (the internal representation of a given
+        country) and ''«product»'' (the website in question).
+        
+        Many aspects of a web page would be treated as global, such as the
+        doctype. The layout of a page would be «product» specific (<Movies>
+        would be different from <TV>). The links in the head of the page, such
+        as those to Help and Mail, would be identical but be translated to be
+        «intl» specific. And then items such as the logo of the site would be
+        specific to the combination of both «intl» and «product» (since the
+        logo would be something like ''Yahoo! Movies UK & Ireland'').
+        
+        As r3 matured, the ways in which a file can differ (called
+        ''dimensions'') was expanded from just two fixed ways to anything that
+        the author chooses. Internally at Yahoo! «intl» and «product» are
+        still used, but other dimensions such as «section» (areas of a site),
+        «realm» (whether the site is development, staging or live) and
+        «version» can be used as well.
+        
+        The purpose of this site is to explain how to create web pages
+        efficiently using r3, sharing code amongst pages, versions, languages
+        and even across entirely disparate web sites. All of the principles
+        addressed are also applicable for people using r3 to manage content
+        other than HTML, CSS and JS, but this will concentrate mostly on the
+        use of r3 for creating the web.
+        
+        
+<Mac Pro | http://www.apple.com/macpro/>
+<the homepage | http://www.apple.com/>
+<polymorphism |
+http://en.wikipedia.org/wiki/Polymorphism_in_object-oriented_programming
+>
+<Macbook Air | http://www.apple.com/macbookair/>
+<TV | http://uk.tv.yahoo.com/>
+<apple.com site map | http://www.apple.com/sitemap/>
+<inheritance | http://en.wikipedia.org/wiki/Inheritance_(computer_science)>
+<object-oriented | http://en.wikipedia.org/wiki/Object-oriented_programming>
+<Movies | http://uk.movies.yahoo.com/>
+<flickr | http://flickr.com/search/?q=sitemap&z=t&ss=2&ct=6>
+<iMac | http://www.apple.com/imac/>

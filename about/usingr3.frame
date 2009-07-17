@@ -1,0 +1,21 @@
+        This site is an in-depth examination of the r3 software, created at
+        <Yahoo!>, with the primary purpose of creating multiple web sites in
+        many languages from one central set of code (you can read a more
+        detailed explanation of <what r3 is>).
+
+        The majority of the content on this site will form a full guide to
+        installing, configuring and using r3, much like you would expect from
+        a book on the tool. This will serve as an introductory reference for
+        anyone new to r3 as well as a reference for anyone already using it.
+        The <homepage> of this site is designed to reflect this, by being an
+        index/table of contents.
+
+        In addition, there will also be occasional more blog-like updates
+        covering the world of r3. Here you can expect notices when the
+        software updates, links to other r3 related content and anything
+        else to do with r3 or stickleback (the plugin engine r3 is written
+        on top of).
+
+<homepage | />
+<what r3 is | /about/r3/>
+<Yahoo! | http://developer.yahoo.com/r3/>

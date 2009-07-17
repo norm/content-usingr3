@@ -1,0 +1,11 @@
+title       = About “using r3”
+subtitle    = (
+    A quick explanation of what this site is about, 
+    and what you can expect to get from it.
+)
+timestamp   = 1221333072
+
+# convert this to use metadata lookup?
+related[]   = /about/r3
+
+blog_index  = false
