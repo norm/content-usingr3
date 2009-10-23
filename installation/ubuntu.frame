@@ -1,0 +1,46 @@
+        On Ubuntu <PHP>, <PEAR> and <PDO SQLite> (or <PDO MySQL>---more on that
+        later) are the only system pre-requisites for running r3 on Ubuntu
+        hosts.
+        
+        Installing this software is very easy, assuming you are using the
+        <APT> package management system that ships with Ubuntu.
+        
+        First, it is worth ensuring that your machine knows about the latest
+        packages available for your system, by issuing the command <<sudo
+        apt-get update>> (you can also see if any of your existing software
+        has newer versions available with <<sudo apt-get upgrade>>).
+        
+        Install the PHP software required with <<sudo apt-get install 
+        php5-sqlite php-pear>>.
+        
+        Install stickleback (the plugin manager that r3 is built upon) with
+        <<sudo pear install 
+        http://downloads.sourceforge.net/stickleback/stickleback-1.10.0.tgz>>.
+        
+        Lastly, install r3 with <<sudo pear install --alldeps
+        http://downloads.sourceforge.net/rthree/r3-1.9.0.tgz>>.
+        
+        You can confirm that r3 is successfully installed and working, by
+        issuing the following commands:
+        
+    <<
+        % r3 setup setuphome /tmp/r3
+        % r3 -c /tmp/r3 setup installdb
+    >>  
+        
+        You should see r3 report installing and creating tables successfully:
+        
+    <<
+        installing r3 db
+        creating r3 db
+        connecting to r3 db
+        creating r3 tables
+    >>
+        
+        
+        
+<PHP        | http://php.net/>
+<PEAR       | http://pear.php.net/>
+<PDO SQLite | http://php.net/manual/en/ref.pdo-sqlite.php>
+<PDO MySQL  | http://php.net/manual/en/ref.pdo-mysql.php>
+<APT        | http://en.wikipedia.org/wiki/Advanced_Packaging_Tool>
